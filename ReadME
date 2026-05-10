@@ -1,0 +1,57 @@
+````markdown
+# AI and Python Projects Collection
+
+This repository contains multiple independent projects related to artificial intelligence, algorithms, and problem solving.
+
+Each project is organized in its own folder and includes a dedicated `README.md` file containing:
+- Project description
+- Features
+- Installation instructions
+- Usage guide
+- Technologies used
+- Future improvements
+
+## Repository Structure
+
+```bash
+.
+├── Labryinth_solver/
+│   └── README.md
+│
+├── logic-translator/
+│   └── README.md
+│
+└── README.md
+````
+
+## Projects
+
+### Labryinth_solver
+
+A project focused on solving labyrinth and maze problems using search and pathfinding algorithms.
+
+### logic-translator
+
+A logic translation system that converts logical expressions or statements into another representation or format.
+
+## Purpose of This Repository
+
+The purpose of this repository is to:
+
+* Practice software engineering principles
+* Build clean and maintainable AI-related projects
+* Improve algorithmic problem-solving skills
+* Create portfolio-ready GitHub projects
+
+## Notes
+
+* Every project folder contains its own detailed documentation.
+* Projects may use different technologies and dependencies.
+* Additional projects will be added in the future.
+
+## License
+
+This repository is licensed under the MIT License.
+
+```
+```
