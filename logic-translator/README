@@ -1,0 +1,128 @@
+```markdown
+# Natural Language to Predicate Logic Converter
+
+![Python Version](https://img.shields.io/badge/python-3.8%2B-blue)
+![Build Status](https://img.shields.io/badge/tests-passing-brightgreen)
+![License](https://img.shields.io/badge/license-MIT-green)
+
+## Description
+
+This project provides a robust, modular, two-way translation engine designed to bridge the gap between natural language and formal mathematical logic. Built using Python, it functions as a command-line utility that bidirectionally translates structured English statements into Predicate Logic notations.
+
+In the domain of Artificial Intelligence and Knowledge Representation, converting human-readable facts into machine-parsable logic is a foundational step for automated reasoning and inference systems. This tool implements rule-based parsing algorithms to extract subjects, objects, and quantifiable conditions from strings. 
+
+Specifically, the system identifies standard English quantifiers (such as "all", "every", "some", and "no") and accurately maps them to their respective Universal (∀x) and Existential (∃x) quantifiers in formal logic. Furthermore, it determines the appropriate logical connectors—applying implication (→) for universal statements and conjunction (∧) for existential statements. The reverse engine takes structured predicate expressions, interprets the formal symbols, and reconstructs them into grammatically correct and readable English sentences.
+
+This project was developed to demonstrate practical applications of discrete mathematics and symbolic AI modeling within a clean, test-driven software architecture.
+
+---
+
+## Features
+
+* **English to Predicate Logic:** Detects English quantifiers (*All, some, no, each, etc.*) and maps them to their formal logic counterparts (∀x, ∃x), applying the correct logical connectors (→, ∧).
+* **Predicate Logic to English:** Parses complex logic strings and reconstructs readable, grammatically accurate English sentences.
+* **Modular Architecture:** Clean separation of concerns across parsing, conversion logic, and utility mappings.
+* **Test-Driven:** Includes a comprehensive unit testing suite to validate conversion accuracy in both directions.
+
+---
+
+## Project Structure
+
+```text
+mini_project2/
+├── docs/                   # Documentation and project requirements
+│   ├── Mini Project 2.md
+│   └── Mini Project 2.pdf
+├── notebook/               # Jupyter notebooks for exploratory data analysis
+│   └── project.ipynb
+├── src/                    # Core source code
+│   ├── __init__.py
+│   ├── Converter.py        # Core logic conversion engine
+│   ├── parser.py           # String parsing and predicate extraction algorithms
+│   └── utils.py            # Dictionary mappings for quantifiers and connectors
+├── test/                   # Unit test suite
+│   ├── __init__.py
+│   ├── test_en_to_pred.py  
+│   └── test_pred_to_en.py  
+├── main.py                 # Command-line interface entry point
+└── README.md               
+
+```
+
+---
+
+## Installation & Setup
+
+This project is built with standard Python libraries and requires no external dependencies.
+
+1. **Clone the repository:**
+```bash
+git clone [https://github.com/yourusername/logic-converter.git](https://github.com/yourusername/logic-converter.git)
+cd logic-converter
+
+```
+
+
+2. **Create and activate a virtual environment:**
+```bash
+python3 -m venv venv
+source venv/bin/activate
+
+```
+
+
+
+---
+
+## Usage
+
+To execute the main program and view the standard conversion examples, run the entry point script:
+
+```bash
+python main.py
+
+```
+
+### Example I/O
+
+**Task 1: English to Predicate**
+
+* **Input:** `"All dinosaurs are extinct."`
+* **Output:** `∀x (is_dinosaur(x) → is_extinct(x))`
+
+**Task 2: Predicate to English**
+
+* **Input:** `"∃x (is_animal(x) ∧ is_endangered(x))"`
+* **Output:** `"Some animals are endangered."`
+
+---
+
+## Running Tests
+
+The project utilizes Python's built-in `unittest` framework. To verify the integrity of the conversion algorithms, run the test suite from the root directory:
+
+```bash
+python -m unittest discover -s test
+
+```
+
+*Expected Output:*
+
+```text
+....
+----------------------------------------------------------------------
+Ran 4 tests in 0.001s
+
+OK
+
+```
+
+---
+
+## Author
+
+**Omar Hazem**
+
+```
+
+```
